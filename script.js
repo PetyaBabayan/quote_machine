@@ -27,4 +27,7 @@ const quoteWrapper = document.getElementById('quote-wrapper');
 showQuoteButton.onclick = () => {
     let randomQuote = Math.floor(Math.random() * arrayOfQuotes.length);
     quoteWrapper.innerHTML = arrayOfQuotes[randomQuote];
+    quoteWrapper.style.fontSize = '30px';
+    quoteWrapper.style.textAlign = 'center';
+    quoteWrapper.style.color = '#fff';
 }
